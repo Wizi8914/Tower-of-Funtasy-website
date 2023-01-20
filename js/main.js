@@ -30,7 +30,7 @@ function reveal() {
 
 fetch(`https://discord.com/api/v6/users/@me/guilds`, {
   headers: {
-    'Authorization': `Bot ${process.env.BOT_TOKEN}`
+    'Authorization': `Bot ${BOT_TOKEN}`
   }
 })
 .then(response => response.json())
