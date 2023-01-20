@@ -16,7 +16,7 @@ function reveal() {
     if (revealtop < windowheight - revealpoint) {
       reveals[i].classList.add("active");
 
-      if (reveals[i].children[0].children[0].innerText === "Colaborators" && isAnimate === false) {
+      if (reveals[i].children[0].children[0].innerText === "Collaborators" && isAnimate === false) {
         animate()
         isAnimate = true
       }

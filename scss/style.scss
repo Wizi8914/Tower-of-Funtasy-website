@@ -253,8 +253,12 @@ header {
 
     &-link {
         color: var(--main-color);
-
         text-transform: none;
+        transition-duration: .3s;
+
+        &:hover {
+            opacity:0.8;
+        }
     }
 }
 

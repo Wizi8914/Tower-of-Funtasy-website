@@ -278,6 +278,12 @@ header {
 .bot-description-link {
   color: var(--main-color);
   text-transform: none;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.bot-description-link:hover {
+  opacity: 0.8;
 }
 
 /* home end */

@@ -1,0 +1,117 @@
+[
+    {
+        "title": "/help",
+        "type": "moderation",
+        "description": "See all titles",
+        "usage": "/help"
+    },
+    {
+        "title": "/joint-operation",
+        "type": "tof",
+        "description": "View today's Joint Operations",
+        "usage": "/joint-operation [weekday](optional)"
+    },
+    {
+        "title": "/matrix",
+        "type": "tof",
+        "description": "View matrix details",
+        "usage": "/matrix [rarity] [name]"
+    },
+    {
+        "title": "/order",
+        "type": "tof",
+        "description": "Simulate an summon on a choice of banner (slow)",
+        "usage": "/order"
+    },
+    {
+        "title": "/password",
+        "type": "tof",
+        "description": "See all passwords for chests and doors in the map",
+        "usage": "/password"
+    },
+    {
+        "title": "/reminder",
+        "type": "tof",
+        "description": "ToF View dailies/weeklies!",
+        "usage": "/reminder"
+    },
+    {
+        "title": "/simulacra",
+        "type": "tof",
+        "description": "View simulacra details",
+        "usage": "/simulacra [name]"
+    },
+    {
+        "title": "/userinfo (No longer works)",
+        "type": "tof",
+        "description": "View information of a player in ToF.",
+        "usage": "/userinfo [region] [name]"
+    },
+    {
+        "title": "/botinfo",
+        "type": "info",
+        "description": "Give information about the bot",
+        "usage": "/botinfo"
+    },
+    {
+        "title": "/contribute",
+        "type": "others",
+        "description": "Contribute to this project",
+        "usage": "/contribute"
+    },
+    {
+        "title": "/invite",
+        "type": "info",
+        "description": "Invite this bot to youre server",
+        "usage": "/invite"
+    },
+    {
+        "title": "/map",
+        "type": "tof",
+        "description": "Get all interactive maps links",
+        "usage": "/map"
+    },
+    {
+        "title": "/raid",
+        "type": "tof",
+        "description": "View raid detail",
+        "usage": "/raid [difficulty] [raid]"
+    },
+    {
+        "title": "/vote",
+        "type": "others",
+        "description": "Vote for support bot and creators",
+        "usage": "/vote"
+    },
+    {
+        "title": "/support",
+        "type": "info",
+        "description": "Oh! You wanna support me?!",
+        "usage": "/support"
+    },
+    {
+        "title": "/game-daily-channel",
+        "type": "tof",
+        "description": "Set up a channel that will indicate the things to do each day",
+        "usage": "/game-daily-channel [channel] [status] [country](optional)"
+    },
+    {
+        "title": "/setregion",
+        "type": "others",
+        "description": "Allows to adapt the time displayed according to the region",
+        "usage": "/setregion [region]"
+    },
+    {
+        "title": "/bug-report",
+        "type": "moderation",
+        "description": "Warn the staff of a bug found",
+        "usage": "/bug-report [title] [description]"
+    },
+    {
+        "title": "/crit",
+        "type": "tof",
+        "description": "Get crit rate according to the crit and the level",
+        "usage": "/crit [level] [crit]"
+    }
+]
+

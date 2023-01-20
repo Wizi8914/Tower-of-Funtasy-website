@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tower of Funtasy</title>
+        <link rel="shortcut icon" href="assets/tof-logo.ico" type="image/x-icon">
         <link rel="stylesheet" href="./scss/style.css">
         <script src="https://kit.fontawesome.com/5991870b6e.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -34,7 +35,7 @@
                         Tower of Funtasy is a fan-made Discord bot written with <a class="bot-description-link" href="https://discord.js.org">Discord.js</a> that 
                         provides several useful information about the game <a class="bot-description-link" href="https://www.toweroffantasy-global.com">Tower of Fantasy</a>.It will be the perfect tool for ToF community servers.
                     </p>
-                    <button onclick="window.open(' https://discord.com/oauth2/authorize?client_id=1013445171536482326&scope=bot&permissions=535059496017', '_blank')" class="home-btn">Add to discord</button>
+                    <button onclick="window.open('https://discord.com/oauth2/authorize?client_id=1013445171536482326&scope=bot&permissions=535059496017', '_blank')" class="home-btn">Add to discord</button>
                 </div>
                 <div class="home-img">
                     <img src="assets/tof-logo.jpg"
@@ -115,73 +116,13 @@
                 <div class=" categorys">
                     <span class="category active" data-name="all">All</span>
                     <span class="category" data-name="tof">ToF</span>
-                    <span class="category" data-name="utility">Others</span>
                     <span class="category" data-name="moderation">Moderation</span>
                     <span class="category" data-name="info">Info</span>
+                    <span class="category" data-name="others">Others</span>
                 </div>
             </nav>
             <!-- Commands -->
             <div class="commands">
-                <!-- Command Start -->
-                <div class="command" data-name="moderation">
-                    <h2>/help</h2><span>
-                        <div class="cmdinfo">
-                            <p>See all commands</p>
-                        </div>
-                        <div class="cmduse">
-                            <p>Usage: /help</p>
-                        </div>
-                    </span>
-                </div>
-                <!-- Command End -->
-                <!-- Command Start -->
-                <div class="command" data-name="tof">
-                    <h2>/joint-operation</h2><span>
-                        <div class="cmdinfo">
-                            <p>View today's Joint Operations</p>
-                        </div>
-                        <div class="cmduse">
-                            <p>Usage: /joint-operation (optional)[day]</p>
-                        </div>
-                    </span>
-                </div>
-                <!-- Command End -->
-                <!-- Command Start -->
-                <div class="command" data-name="tof">
-                    <h2>/matrix</h2><span>
-                        <div class="cmdinfo">
-                            <p>View matrix details</p>
-                        </div>
-                        <div class="cmduse">
-                            <p>Usage: /matrix [rarity] [matrix]</p>
-                        </div>
-                    </span>
-                </div>
-                <!-- Command End -->
-                <!-- Command Start -->
-                <div class="command" data-name="tof">
-                    <h2>/order</h2><span>
-                        <div class="cmdinfo">
-                            <p>Simulate an summon on a choice of banner (slow)</p>
-                        </div>
-                        <div class="cmduse">
-                            <p>Usage: /order</p>
-                        </div>
-                    </span>
-                </div>
-                <!-- Command End -->
-                <!-- Command Start -->
-                <div class="command" data-name="tof">
-                    <h2>/password</h2><span>
-                        <div class="cmdinfo">
-                            <p>See all passwords for chests and doors in the map</p>
-                        </div>
-                        <div class="cmduse">
-                            <p>Usage: /order</p>
-                        </div>
-                    </span>
-                </div>
-                <!-- Command End -->
             </div>
         </div>
         <!-- commands end -->
@@ -225,11 +166,11 @@
         <!-- colaborator -->
 
 
-        <div class="colaborators">
+        <div class="collaborators">
             <div class="wrapper reveal">
                 <div class="title">
                     <div class="th1">
-                        <h1>Colaborators</h1>
+                        <h1>Collaborators</h1>
                     </div>
                     <center>
                         <div class="thr">
@@ -279,7 +220,7 @@
         </footer>
         <!-- footer end -->
         <script src="js/main.js"></script>
-        <script src="js/commands.js"></script>
+        <script src="js/commands/commands.js"></script>
         <script src="js/counter.js"></script>
         <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
