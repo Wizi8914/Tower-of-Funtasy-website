@@ -51,9 +51,6 @@ fetch("js/commands/commands.json")
 
         const filterImg = document.querySelectorAll(".commands .command");
 
-        console.log(filterImg)
-
-
         filtercategory.onclick = (selectedcategory) => {
           console.log(selectedcategory)
           if (selectedcategory.target.classList.contains("category")) {

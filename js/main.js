@@ -25,3 +25,19 @@ function reveal() {
     }
   }
 }
+
+
+
+fetch(`https://discord.com/api/v6/users/@me/guilds`, {
+  headers: {
+    'Authorization': `Bot ${process.env.BOT_TOKEN}`
+  }
+})
+.then(response => response.json())
+.then(data => {
+    console.log(data)
+    console.log(`Your bot is in ${data.length} guilds.`);
+})
+.catch(err => {
+    console.error("Error fetching guild count: ", err);
+});
