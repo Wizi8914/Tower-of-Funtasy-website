@@ -389,6 +389,67 @@ header {
     }
 }
 
+.command-input__group {
+    position: relative;
+    padding: 15px 150px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+.command-input__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--nav-text-color);
+    outline: 0;
+    font-size: 1.3rem;
+    color: var(--heading-color);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+        color: transparent;
+    }
+
+    &:placeholder-shown ~ .command-input__label {
+        font-size: 1.3rem;
+        cursor: text;
+        top: 20px;
+    }
+}
+  
+.command-input__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--nav-text-color);
+}
+  
+.command-input__field:focus {
+    ~ .command-input__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: var(--main-color);
+      font-weight:700;    
+    }
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, var(--main-color), var(--main-hover-color));
+    border-image-slice: 1;
+}
+  /* reset input */
+.command-input__field{
+    &:required,&:invalid { box-shadow:none; }
+}
+
 .commands {
     display: flex;
     flex-direction: column;
@@ -580,6 +641,18 @@ footer {
             }
         }
     }
+
+    .counter-flex {
+        flex-direction: column;
+
+        &__column {
+            margin: 50px 0px 50px 0px;
+        }
+    }
+
+    .bottom-nav {
+        display: contents;
+    }
 }
 
 @media all and (max-width:900px) {
@@ -638,6 +711,16 @@ footer {
     .collaborators-list {
         flex-direction: column;
     }
+
+    .command-input__group {
+        padding: 15px 80px;
+    }
+
+    .bottom-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 600px) {
@@ -655,13 +738,9 @@ footer {
     }
 }
 
-@media (max-width: 1200px) {
-    .counter-flex {
-        flex-direction: column;
-
-        &__column {
-            margin: 50px 0px 50px 0px;
-        }
+@media (min-width: 1200px) {
+    .command-input__group {
+        padding: 15px 200px;
     }
 }
     

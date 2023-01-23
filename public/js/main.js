@@ -27,3 +27,20 @@ function reveal() {
     }
   }
 }
+
+function search() {
+  const filterImg = document.querySelectorAll(".commands .command");
+  const value = document.querySelector(".command-input__field").value.toLowerCase()
+
+
+  filterImg.forEach((command) => {
+    if (command.children[0].innerHTML.substring(1).includes(value)) {
+      command.classList.remove("hide");
+      command.classList.add("show");
+    } else {
+      command.classList.remove("show");
+      command.classList.add("hide");
+    }
+    
+  });
+}

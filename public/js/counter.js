@@ -1,4 +1,3 @@
-
 fetch(`/stats`)
 .then(response => response.json())
 .then(data => {
@@ -27,4 +26,3 @@ fetch(`/stats`)
 .catch(err => {
     console.error("Error fetching guild count: ", err);
 })
-

@@ -423,6 +423,91 @@ header {
   background: var(--main-color);
 }
 
+.command-input__group {
+  position: relative;
+  padding: 15px 150px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.command-input__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--nav-text-color);
+  outline: 0;
+  font-size: 1.3rem;
+  color: var(--heading-color);
+  padding: 7px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.command-input__field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.command-input__field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.command-input__field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.command-input__field::placeholder {
+  color: transparent;
+}
+
+.command-input__field:placeholder-shown ~ .command-input__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.command-input__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: var(--nav-text-color);
+}
+
+.command-input__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, var(--main-color), var(--main-hover-color));
+     border-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(var(--main-hover-color)));
+     border-image: linear-gradient(to right, var(--main-color), var(--main-hover-color));
+  border-image-slice: 1;
+}
+
+.command-input__field:focus ~ .command-input__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+/* reset input */
+.command-input__field:required, .command-input__field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .commands {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,6 +744,18 @@ footer {
   .wrapper nav .categorys span {
     padding: 7px 15px;
   }
+  .counter-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .counter-flex__column {
+    margin: 50px 0px 50px 0px;
+  }
+  .bottom-nav {
+    display: contents;
+  }
 }
 
 @media all and (max-width: 900px) {
@@ -722,6 +819,21 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .command-input__group {
+    padding: 15px 80px;
+  }
+  .bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -740,15 +852,9 @@ footer {
   }
 }
 
-@media (max-width: 1200px) {
-  .counter-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .counter-flex__column {
-    margin: 50px 0px 50px 0px;
+@media (min-width: 1200px) {
+  .command-input__group {
+    padding: 15px 200px;
   }
 }
 
