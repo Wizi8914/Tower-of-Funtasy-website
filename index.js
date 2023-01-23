@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const fetch = require("node-fetch")
 require("dotenv").config()
 
 app.use(express.static(__dirname + "/public"));
@@ -11,7 +12,7 @@ app.get("/stats", (req, res) => {
         .then(response => response.json())
         .then(data => {
         
-        res.send(data);
+            res.send(data);
     })
     .catch(err => {
         console.error("Error fetching bot Stats: ", err);
