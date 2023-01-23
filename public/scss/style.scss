@@ -32,11 +32,6 @@ h1 {
     color: var(--heading-color);
 }
 
-h2 {
-    margin-left: 1.5%;
-    color: var(--heading-color);
-}
-
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -408,6 +403,11 @@ header {
         height: auto;
         border-radius: 15px;
         background-color: var(--second-color);
+        transition-duration: .3s;
+
+        &:hover {
+            transform: scale(1.03);
+        }
 
         span {
             flex-direction: column;
@@ -430,8 +430,76 @@ header {
         &.show {
             animation: animate 0.4s ease;
         }
+
+        h2 {
+            margin-left: 1.5%;
+            color: var(--heading-color);
+        }
     }
 }
+
+.counters {
+    .counter-flex {
+
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        &__column {
+            flex: 1;
+
+            .value {
+                font-size: 4em;
+                color: var(--heading-color);
+            }
+
+            h2 {
+                font-size: 2em;
+                color: var(--heading-color);
+            }
+        }
+    }
+}
+
+.collaborators-list {
+    display: flex;
+    justify-content: space-around;
+
+    .collaborator {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 15px;
+        border: 2px solid var(--third-color);
+        transition: all 0.3s ease;
+
+        img {
+            height: 250px;
+            width: 250px;
+            margin: 20px 20px 10px;
+            border-radius: 50%;
+        }
+
+        h2, h4 {
+            color: var(--heading-color);
+        }
+
+        h4 {
+            margin-bottom: 5px;
+        }
+
+        &:hover {
+            border: 2px solid var(--main-color);
+        }
+    }
+}
+
 
 .cmdinfo {
     margin-top: 1%;
@@ -481,7 +549,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     height: 250px;
-    color: white;
+    color: var(--heading-color);
 }
 
 /* footer end */
@@ -531,7 +599,7 @@ footer {
         margin: 30px auto;
 
         nav .categorys {
-            max-width: 600px;
+            justify-content: center;
 
             span {
                 padding: 7px 15px;
@@ -566,6 +634,10 @@ footer {
     .nav-area li a {
         font-size: 12.25px;
     }
+
+    .collaborators-list {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 600px) {
@@ -582,6 +654,18 @@ footer {
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .counter-flex {
+        flex-direction: column;
+
+        &__column {
+            margin: 50px 0px 50px 0px;
+        }
+    }
+}
+    
+
 
 /* @ end */
 

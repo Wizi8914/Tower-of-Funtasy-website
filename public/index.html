@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tower of Funtasy</title>
         <link rel="shortcut icon" href="assets/tof-logo.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./scss/style.css">
+        <link rel="stylesheet" href="scss/style.css">
         <script src="https://kit.fontawesome.com/5991870b6e.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
     </head>
 
     <body>
@@ -19,6 +20,8 @@
                     <li><a href="#top">Home</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#commands">Commands</a></li>
+                    <li><a href="#stats">Stats</a></li>
+                    <li><a href="#collaborators">Collaborators</a></li>
                     <li><a target="_blank" href="https://github.com/Marviuz/tower-of-funtasy-discordbot">GitHub</a></li>
                 </ul>
             </nav>
@@ -127,11 +130,10 @@
         </div>
         <!-- commands end -->
         <!-- stats -->
-
         <div class="stats">
             <div class="curve">
                 <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill-opacity="1"
+                    <path fill-opacity="1" id="stats"
                         d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,202.7C672,224,768,224,864,224C960,224,1056,224,1152,234.7C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                     </path>
                 </svg>
@@ -147,25 +149,18 @@
                         </div>
                     </center>
                 </div>
-
-
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, ipsam at? Maxime labore dolor debitis itaque. Sunt, doloribus atque earum vero amet voluptatum molestiae deleniti dolorem excepturi? Quasi, alias doloremque!</p>
-
+                <div class="counters"></div>
             </div>  
             <div class="curve">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill-opacity="1"
+                    <path fill-opacity="1" id="collaborators"
                         d="M0,32L48,80C96,128,192,224,288,218.7C384,213,480,107,576,96C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
                     </path>
                 </svg>
             </div>
         </div>
-
         <!-- stats end -->
-
         <!-- colaborator -->
-
-
         <div class="collaborators">
             <div class="wrapper reveal">
                 <div class="title">
@@ -178,28 +173,29 @@
                         </div>
                     </center>
                 </div>
+                <div class="collaborators-list">
+                    <a href="https://github.com/Marviuz" target="_blank" class="collaborator">
+                        <img src="https://avatars.githubusercontent.com/u/112187144?v=4" alt="Marviuz Avatar">
+                        <h2>Marviuz</h2>
+                        <h4>Project Owner</h4>
+                    </a>
+                    <a href="https://github.com/Wizi8914" target="_blank" class="collaborator">
+                        <img src="https://avatars.githubusercontent.com/u/45132525?v=4" alt="Wizi8914 Avatar">
+                        <h2>WIZI</h2>
+                        <h4>Major Developer</h4>
+                    </a>
+                </div>
 
-
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, ipsam at? Maxime labore dolor debitis itaque. Sunt, doloribus atque earum vero amet voluptatum molestiae deleniti dolorem excepturi? Quasi, alias doloremque!</p>
-
-
-                <div style="color: white" class="value" final="50000">0</div>
             </div>  
         </div>
-
-
-        
         <!-- colaborator end -->
-
-
         <div class="curve">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" id="faq"
+                <path fill-opacity="1"
                     d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg>
         </div>
-
         <!-- footer -->
         <footer>
 
@@ -220,7 +216,7 @@
         </footer>
         <!-- footer end -->
         <script src="js/main.js"></script>
-        <script src="js/commands/commands.js"></script>
+        <script type="module" src="js/commands/commands.js"></script>
         <script src="js/counter.js"></script>
         <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
