@@ -18,10 +18,10 @@ fetch(`/stats`)
 
     const counters = document.querySelector(".counters")
     let counter = document.createElement("div"); 
-    counter.className = "counter-flex"
-    counter.innerHTML = html 
+    counter.className = "counter-flex";
+    counter.innerHTML = html;
 
-    counters.appendChild(counter)
+    counters.appendChild(counter);
 })
 .catch(err => {
     console.error("Error fetching guild count: ", err);

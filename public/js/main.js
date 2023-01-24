@@ -1,11 +1,8 @@
 window.addEventListener("load", () => {
-  document.querySelector(".copyright").innerHTML = `Copyright by Wizi © 2022 - ${new Date().getFullYear()}`
-
+  document.querySelector(".copyright").innerHTML = `Copyright by Wizi © 2022 - ${new Date().getFullYear()}`;
 })
 
 window.addEventListener("scroll", reveal);
-
-let isAnimate = false
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -17,11 +14,6 @@ function reveal() {
 
     if (revealtop < windowheight - revealpoint) {
       reveals[i].classList.add("active");
-
-      if (reveals[i].children[0].children[0].innerText === "Stats" && isAnimate === false) {
-        
-      isAnimate = true
-      }
     } else {
       reveals[i].classList.remove("active");
     }
@@ -32,7 +24,6 @@ function search() {
   const filterImg = document.querySelectorAll(".commands .command");
   const value = document.querySelector(".command-input__field").value.toLowerCase()
 
-
   filterImg.forEach((command) => {
     if (command.children[0].innerHTML.substring(1).includes(value)) {
       command.classList.remove("hide");
@@ -41,6 +32,5 @@ function search() {
       command.classList.remove("show");
       command.classList.add("hide");
     }
-    
   });
 }

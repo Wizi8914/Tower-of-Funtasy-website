@@ -19,7 +19,6 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-
 const filtercategory = document.querySelector(".categorys");
 const commands = document.querySelector(".commands")
 
