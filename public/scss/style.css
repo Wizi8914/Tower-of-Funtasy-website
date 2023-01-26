@@ -647,6 +647,13 @@ header {
   border: 2px solid var(--main-color);
 }
 
+.collaborator-text {
+  text-align: center;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  margin: 30px;
+}
+
 .cmdinfo {
   margin-top: 1%;
   margin-left: 1%;
@@ -855,6 +862,9 @@ footer {
 @media (min-width: 1200px) {
   .command-input__group {
     padding: 15px 200px;
+  }
+  .collaborator-text {
+    margin: 100px 0px 0px;
   }
 }
 

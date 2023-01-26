@@ -3,15 +3,15 @@ fetch(`/stats`)
 .then(data => {
     const html = `
     <div class="counter-flex__column">
-        <div class="value">${data.server}</div>
+        <div class="value" data-from="0" data-to="${data.server}"></div>
         <h2><i class="fas fa-server"></i> Servers</h2>
     </div>
     <div class="counter-flex__column">
-        <div class="value">${data.commands}</div>
+        <div class="value" data-from="0" data-to="${data.commands}"></div>
         <h2><i class="fas fa-terminal"></i> Commands</h2>
     </div>
     <div class="counter-flex__column">
-        <div class="value">${data.members}</div>
+        <div class="value" data-from="0" data-to="${data.members}"></div>
         <h2><i class="fas fa-users"></i> Users</h2>
     </div>
     `
@@ -22,7 +22,11 @@ fetch(`/stats`)
     counter.innerHTML = html;
 
     counters.appendChild(counter);
+
+    counterLoad = true
 })
 .catch(err => {
     console.error("Error fetching guild count: ", err);
 })
+
+let counterLoad = false
