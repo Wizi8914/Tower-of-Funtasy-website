@@ -23,10 +23,14 @@ fetch(`/stats`)
 
     counters.appendChild(counter);
 
-    counterLoad = true
+    
+    $('.value').countTo({
+        refreshInterval: 50,
+        speed: 1500
+    });
+    
+
 })
 .catch(err => {
     console.error("Error fetching guild count: ", err);
 })
-
-let counterLoad = false

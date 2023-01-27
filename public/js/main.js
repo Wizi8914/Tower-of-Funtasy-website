@@ -6,6 +6,7 @@ window.addEventListener("load", () => {
 window.addEventListener("scroll", reveal);
 
 let wasAnimate = false
+let wasActivate = true
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -23,25 +24,22 @@ function reveal() {
         return element.className.endsWith("active")
       })
 
-      console.log(counterLoad)
-
-      if (numberOfactive.length >= 3 && wasAnimate == false) {
-        wasAnimate = true
-        let brk = 0
-        
-        while (brk < 1) {
-          //console.log("uwu")
-          if (counterLoad == true) {
-            console.log
+      if (numberOfactive.length >= 3) {
+        if (wasActivate == wasAnimate) {
+          wasActivate = !wasActivate
+          if (wasActivate) {
             $('.value').countTo({
               refreshInterval: 50,
               speed: 1500
-            });
-            brk = 1
+          });
           }
         }
+        wasAnimate = true
         
-      } 
+      } else {
+        wasAnimate = false
+        wasActivate = !wasActivate
+      }
       
     } else {
       reveals[i].classList.remove("active");
