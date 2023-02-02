@@ -15,7 +15,7 @@
         "title": "/matrix",
         "type": "tof",
         "description": "View matrix details",
-        "usage": "/matrix [rarity] [name]"
+        "usage": "/matrix [name](optional)"
     },
     {
         "title": "/order",
@@ -39,7 +39,7 @@
         "title": "/simulacra",
         "type": "tof",
         "description": "View simulacra details",
-        "usage": "/simulacra [name]"
+        "usage": "/simulacra [element] [simulacra]"
     },
     {
         "title": "/userinfo (No longer works)",
