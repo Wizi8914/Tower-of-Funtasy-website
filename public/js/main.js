@@ -1,7 +1,8 @@
 window.addEventListener("load", () => {
-  document.querySelector(".copyright").innerHTML = `Copyright by Wizi © 2022 - ${new Date().getFullYear()}`
-
+  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 })
+
+
 
 window.addEventListener("scroll", reveal);
 
