@@ -758,7 +758,7 @@ footer {
             flex-direction: column;
   }
   .counter-flex__column {
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px;
   }
   .bottom-nav {
     display: contents;
@@ -869,4 +869,3 @@ footer {
 }
 
 /* @ end */
-/*# sourceMappingURL=style.css.map */
